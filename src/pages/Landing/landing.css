@@ -1,0 +1,103 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Landing page container */
+.landing-page {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.logo {
+  height: 50px;
+  margin-left: 4%;
+}
+
+/* Content Section */
+.landing-content {
+  display: flex;
+  position: relative;
+  height: calc(100% - 60px);  
+  width: 100%;
+  padding-bottom: 50px; 
+}
+
+/* Text Content */
+.text-content {
+  position: absolute;
+  z-index: 2;
+  max-width: 27%;
+  padding: 20px;
+  
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  left: 24%;
+  top: 45%;
+  transform: translateY(-50%);
+}
+
+.text-content h1 {
+  font-size: 1.8em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 35px;
+  margin: 0;
+}
+
+.text-content p {
+  font-size: 0.8em;
+  margin: 20px 0;
+}
+
+.cta-button {
+  background-color: #9c2628;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #b30e11;;
+}
+
+/* Image Content */
+.image-content {
+  height: 90%;  
+  width: 60%;   
+  position: absolute;
+  right: 0;
+  top: -10;
+  bottom: 60px;
+}
+
+.landing-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}

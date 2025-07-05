@@ -1,0 +1,24 @@
+.task-list {
+  margin-left: 10px;
+    text-decoration: none; /* Removes the underline */
+    font-size: 14px; /* Keeps font size 14px */
+    font-weight: 400; /* Lighter font weight for "Task List" */
+    color: grey; /* Grey color for "Task List" */
+  }
+  
+  .request-list {
+    text-decoration: none; 
+    font-size: 14px;
+    font-weight: 700;
+    color: black;
+    margin-right: 10px;
+  }
+  
+  .dashboard-header h1 {
+    display: inline; 
+  }
+  .dashboard-header {
+   
+    gap: 10px;
+  }
+  

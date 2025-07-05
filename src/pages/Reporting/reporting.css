@@ -1,0 +1,84 @@
+/* General Styling for the Reporting Container */
+.reporting-container {
+    padding: 20px; /* Increased padding for better spacing */
+    background-color: #f5f7fa; /* Light gray background for a cleaner look */
+    border-radius: 10px; /* Slightly larger radius for a more modern feel */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Softer and larger shadow for depth */
+}
+
+/* Summary Tile Section */
+.summary-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* Adjusted to ensure consistency */
+    gap: 15px; /* Increased gap for more breathing space */
+    margin-bottom: 20px; /* Better spacing between sections */
+}
+
+.summary-tile {
+    background-color: #ffffff;
+    padding: 20px; /* Increased padding for more content space */
+    border-radius: 8px; /* A modern look with a soft radius */
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); /* Softer and more professional shadow */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smoother transition for hover effects */
+}
+
+.summary-tile:hover {
+    transform: scale(1.05); /* Slightly larger scale on hover for interactivity */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Elevate shadow on hover */
+}
+
+.summary-tile h2 {
+    font-size: 1.1rem; /* Adjusted heading size for better readability */
+    color: #333333; /* Darker text for contrast */
+    margin-bottom: 10px;
+}
+
+.summary-tile p {
+    font-size: 1.25rem; /* Larger font size for ticket numbers */
+    color: #2a7de1; /* A professional blue color for emphasis */
+    font-weight: bold;
+}
+
+/* Charts Section */
+.charts-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Larger min size for charts */
+    gap: 15px; /* Increased gap for better spacing */
+    margin-top: 20px;
+}
+
+.chart {
+    background-color: #ffffff;
+    padding: 20px; /* More padding for consistent spacing */
+    border-radius: 8px; /* Matching radius for uniformity */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); /* Consistent shadow styling */
+}
+
+.chart h3 {
+    font-size: 1rem; /* Adjusted font size for chart headings */
+    color: #444444; /* Softer black for text */
+    margin-bottom: 15px; /* Spacing for better readability */
+}
+
+/* Typography Styling */
+
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .summary-container {
+        grid-template-columns: 1fr; /* Stack summary tiles on smaller screens */
+    }
+
+    .charts-container {
+        grid-template-columns: 1fr; /* Stack charts on smaller screens */
+    }
+
+    .chart {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    .summary-tile {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+}
